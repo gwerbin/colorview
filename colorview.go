@@ -11,7 +11,7 @@ import (
 )
 
 
-var VERSION = "colorview 0.1.0"
+var VERSION = "colorview 0.1.1"
 
 
 /* https://gitlab.freedesktop.org/xorg/app/rgb/raw/master/rgb.txt */
@@ -783,8 +783,8 @@ func main() {
 
 	var colorName, colorNameClean, colorType string
 
-	var colorTypeFlag = flag.String("-type", "", "Color type. Must be one of: 'x11', 'hex', 'rgb'")
-	var versionFlag = flag.Bool("-version", false, "Print version and exit")
+	var colorTypeFlag = flag.String("type", "", "Color type. Must be one of: 'x11', 'hex', 'rgb'")
+	var versionFlag = flag.Bool("version", false, "Print version and exit")
 	//flag_x11 = flag.Bool("x11", false, "Use X11 colors")
 	//flag_web = flag.Bool("web", false, "Use web colors")
 	//flag_hex = flag.Bool("hex", false, "Use hexadecimal colors")
